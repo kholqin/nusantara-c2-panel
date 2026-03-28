@@ -1,0 +1,72 @@
+body {
+    background-color: #050505;
+    color: #00ff41; /* Green Matrix */
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.scanner {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 2px;
+    background: rgba(0, 255, 65, 0.1);
+    opacity: 0.5;
+    animation: scan 4s linear infinite;
+}
+
+@keyframes scan {
+    0% { top: 0; }
+    100% { top: 100%; }
+}
+
+.container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    border-left: 5px solid #ff0000; /* Red Nusantara Accent */
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-shadow: 2px 2px #ff0000;
+}
+
+.card {
+    background: #0d0d0d;
+    border: 1px solid #333;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    text-transform: uppercase;
+    color: #ff0000;
+    border-bottom: 2px solid #333;
+    padding: 10px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #1a1a1a;
+    font-size: 0.9em;
+}
+
+.status-pwned {
+    color: #ff0000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
