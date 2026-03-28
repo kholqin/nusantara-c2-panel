@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>NUSANTARA C2 - COMMAND CENTER</title>
+    <style>
+        body { background: #0a0a0a; color: #00ff00; font-family: 'Courier New', monospace; padding: 20px; }
+        .header { border-bottom: 2px solid #ff0000; padding-bottom: 10px; margin-bottom: 20px; }
+        .card { background: #1a1a1a; border: 1px solid #333; padding: 15px; border-radius: 5px; margin-bottom: 10px; }
+        .status-online { color: #ff0000; font-weight: bold; animation: blink 1s infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #333; padding: 10px; text-align: left; }
+        th { background: #111; color: #ff0000; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>[ NUSANTARA-C2 v1.0 ] - RED TEAM DASHBOARD</h1>
+        <p>Targeting: Chrome 0-Day Chains | Status: <span class="status-online">ACTIVE LISTENING</span></p>
+    </div>
+
+    <div class="card">
+        <h3>INCOMING EXFILTRATION DATA</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>TIMESTAMP</th>
+                    <th>IP / LOCATION</th>
+                    <th>OS / PLATFORM</th>
+                    <th>CPU/RAM</th>
+                    <th>STATUS</th>
+                </tr>
+            </thead>
+            <tbody id="victim-list">
+                <tr>
+                    <td>2026-03-28 18:20</td>
+                    <td>103.38.102.209 (Cilacap)</td>
+                    <td>Win32 / Chrome 146</td>
+                    <td>2 Cores / 1366x768</td>
+                    <td style="color: #ff0000;">PWNED</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
